@@ -1,0 +1,219 @@
+/*
+ * Course: CST8285, Section 301 
+ * Professor: Hala Owan
+ * Sutdent Name: Fei Lan
+ * Due Date: Feb 25, 2023
+ * Description: The Style Sheet file for Assignment 1
+ */
+
+/*
+Attributes for body
+*/
+body {
+  background-image: url("./images/body_background.jpg");
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 0px;
+  line-height: 30px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: #9b9b9b;
+  border-right-style: inset;
+  border-left-style: inset;
+}
+
+/*
+Attributes for p
+*/
+p {
+  padding: 5px;
+}
+
+/*
+Attributes for header
+*/
+header {
+  height: 120px;
+  background-color: lightblue;
+  background-size: contain;
+  text-align: center;
+  padding-left: 50px;
+  padding-top: 20px;
+  line-height: 25px;
+  color: black;
+}
+
+/*
+Attribute for header h1
+*/
+header h1 {
+  font-size: 38px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*
+Attributes for main
+*/
+main {
+  width: 100%;
+  overflow: hidden;
+  /*padding: 20px 20px 20px 20px; */
+}
+
+/*
+Attributes for nav-menu
+*/
+nav {
+  background-color: #bdbaba;
+  background-size: contain;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  color: blue;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: none;
+  background-color: LIGHTSLATEGRAY;
+  color: MOCCASIN;
+}
+nav ul li {
+  margin-right: 50px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #616161;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Attributes for content
+*/
+#content {
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+}
+
+/*
+Attributes for footer.
+*/
+footer {
+  background-color: #bdbaba;
+  border-width: 1px;
+  border-color: #9b9b9b;
+  border-style: solid;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  color: #616161;
+}
+
+/*
+Attributes for top
+*/
+#top {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+hr {
+  margin-right: 20px;
+}
+
+/*
+Attrinute for introduction
+*/
+#introduction {
+  width: 80%;
+  float: left;
+}
+
+/* Attributes for myPhoto image */
+#myPhoto {
+  border: 2px solid;
+  border-color: yellowgreen;
+  border-radius: 10px;
+  max-width: 150px;
+  max-height: 200px;
+}
+
+/*
+Atttributes for course
+*/
+.course-detail {
+  display: flex;
+  flex-flow: row wrap;
+}
+.course img {
+  padding-left: 20px;
+  max-width: 200px;
+  max-height: 250px;
+}
+
+/*
+Attributes for course display option 
+*/
+form {
+  padding-left: 60px;
+  padding-right: 100px;
+  text-align: center;
+}
+#search-input {
+  width: 60%;
+}
+#filter-level,
+#sort-level {
+  display: inline-block;
+}
+.course ul {
+  width: 500px;
+}
+.display-inline {
+  display: inline-block;
+}
+
+/*
+Atttributes for thumnails
+*/
+.img_thumnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+}
+.img_thumnail:hover {
+  box-shadow: 0 0 2px 1px rgba(27, 94, 107, 0.5);
+}
+
+/*
+Siding for project thumnails
+*/
+@media (min-width: 600px) {
+  .project {
+    width: 75%;
+    float: left;
+  }
+  .imageId {
+    width: 25%;
+    float: right;
+  }
+}

@@ -1,0 +1,231 @@
+<!--in html file-->
+<!DOCTYPE html>
+<!--This is a language in English-->
+<html lang="en">
+
+<!--This is a head-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Fei Lan">
+	<meta name="description" content="Course Page">
+
+	<!--This is a link to CSS-->
+	<link rel="stylesheet" type="text/css" href="Assignment1.css">
+
+	<title>Course</title>
+	<script src="js/course_script.js"></script>
+</head>
+
+<!--This is a body-->
+
+<body>
+	<header>
+		<h1>Fei Lan</h1>
+		<h3>Computer Programming Student </h3>
+	</header>
+
+	<nav id="nav-menu">
+		<ul>
+			<!--Links with index,Resume,Course-->
+			<li><a href="index.html">Home</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="course.html">Course</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<form id="selection">
+			<fieldset>
+				<legend>Search by Course Name</legend>
+				<input type="text" placeholder="Input Course Name" id="search-input">
+				<input type="button" Value="Search Course" onclick="searchCourse()">
+			</fieldset>
+
+			<fieldset>
+				<legend> Filter and Sort Courses by Level</legend>
+				<div class="display-inline">Filter Courses by Level:</div>
+				<div id="filter-level">
+					<input type="radio" name="level" value="Level 1" id="level1" onclick="filterCourse('Level 1')">
+					<label for="level1">Level 1</label>
+					<input type="radio" name="level" value="Level 2" id="level2" onclick="filterCourse('Level 2')">
+					<label for="level2">Level 2</label>
+					<input type="radio" name="level" value="All Levels" id="all-levels"
+						onclick="filterCourse('All Levels')">
+					<label for="all-levels">All Levels</label>
+				</div>
+				<br />
+				<div class="display-inline">Sort Courses by Level:</div>
+				<div id="sort-level">
+					<input type="radio" name="sort-order" value="ascending" id="ascending"
+						onclick="sortCourse('ascending')">
+					<label for="ascending">Ascending</label>
+					<input type="radio" name="sort-order" value="descending" id="descending"
+						onclick="sortCourse('descending')">
+					<label for="descending">Descending</label>
+				</div>
+			</fieldset>
+		</form>
+
+		<div id="content">
+			<h2>COURSE</h2>
+
+			<div class="course">
+				<h3>Introduction To Programming</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8116</li>
+						<li class="level">Level 1</li>
+						<li>Students develop introductory knowledge of computer programming with emphasis on problem
+							analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams and
+							testing,
+							with the Java programming language used as a means to implement problem solution designs.
+						</li>
+					</ul>
+					<img src="./images/Java(level1).png" alt="This is Java Programming book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Introduction To Database</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8215</li>
+						<li class="level">Level 1</li>
+						<li>Databases are used to store data and are a core component of many information technology
+							systems. Students learn the fundamentals of relational databases design using Entity
+							Relation
+							Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify and query a
+							database.
+						</li>
+					</ul>
+					<img src="./images/Database1(level1).jpg" alt="This is database book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Computer Essentials</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8101</li>
+						<li class="level">Level 1</li>
+						<li>The essentials of computer software, hardware, and laptop management form the foundation for
+							building further technical programming skills. Students learn to configure your laptop
+							environment, basic PC and troubleshoot problems.</li>
+					</ul>
+					<img src="./images/ComputerArchitecture(level1).png" alt="This is Computer Architecture book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Technical Mathmatics for Computer Science</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: MAT8001C</li>
+						<li class="level">Level 1</li>
+						<li> Students manipulate algebraic expressions, solve algebraic equations and linear systems and
+							learn the properties of and graph algebraic and transcendental functions.
+							Students investigate computer number systems in addition to Boolean algebra and logic to
+							help
+							solve problems involving computer systems.
+						</li>
+					</ul>
+					<img src="./images/TechnicalMath(level1).png" alt="This is Technical Math book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Object Oriented Programming</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8284</li>
+						<li class="level">Level 2</li>
+						<li>Students explore object-oriented programming methodology using the Java programming
+							language.
+							Object oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism
+							are
+							covered and reinforced with practical applications. </li>
+					</ul>
+					<img src="./images/OOJava(level2).jpg" alt="This is Object Oriented Programming book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Database Systems</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST2355</li>
+						<li class="level">Level 2</li>
+						<li>Students acquire practical experience using market-leading object-relational database
+							management
+							systems like Oracle and MySQL. Students obtain hands-on experience with advanced engineering
+							modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks.
+						</li>
+					</ul>
+					<img src="./images/Database(level2).png" alt="This is DataBase Systems book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Web Programming</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8285</li>
+						<li class="level">Level 2</li>
+						<li>Students develop basic skills of web programming, website design and implementation.
+							JavaScript,
+							HTML5, and PHP are used to explore web-based solutions to problems of increasing
+							interactivity
+							and complexity.</li>
+					</ul>
+					<img src="./images/WebProgramming(level2).png" alt="This is Web Programming book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Operating System Fundermentals (GNU/Linux)</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: CST8102</li>
+						<li>Level 2</lilass=>
+						<li>Students explore the basic concepts and components of Operating Systems
+							(OS), and how they function and interact with hardware and software components. Students
+							examine
+							the details of operating system structures, process management, storage management,
+							installation, configuration, and administration. </li>
+					</ul>
+					<img src="./images/OperatingSystem(level2).jpg" alt="Opertaing System book cover">
+				</div>
+			</div>
+
+			<div class="course">
+				<h3>Technical Communication for Engineering Technology</h3>
+				<div class="course-detail">
+					<ul>
+						<li>Course code: ENL2019T</li>
+						<li class="level">Level 2</li>
+						<li>Students are exposed to exercises and assignments designed to foster
+							independent and collaborative critical thinking, research, and writing skills elated to
+							technical topics. </li>
+					</ul>
+					<img src="./images/TechnicalCommunication(level2).jpg"
+						alt="This is Technical Communication book cover">
+				</div>
+			</div>
+
+		</div> <!--end of div content-->
+
+	</main>
+
+	<footer>
+		Name: Fei Lan <br />
+		Student Number: 041055048 <br />
+		Email: Lan00012@algonquinlive.com
+		<a href="#nav-menu" id="top">Top</a>
+	</footer>
+
+</body>
+<!--end of body-->
+
+</html>
+<!--end of html-->
